@@ -1,0 +1,102 @@
+
+
+
+.app-cont{
+  display: flex;
+  justify-content: flex-start;
+  width: 95%;
+  margin-top: 10px 10px;
+  margin: 10px 10px;
+  align-items: center;
+}
+.row-details{
+  width: 20%;
+    margin-left: 53px;
+    font-weight: 600;
+}
+.next-btn{
+  width: 20%;
+}
+.PricingApp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.app-container{
+  display: flex;
+    align-items: center;
+    margin-top: 44px;
+    width: 102%;
+    justify-content: space-evenly;
+    
+}
+
+.heading:hover{
+  background-color: #1e4c90;
+  cursor: pointer;
+}
+.heading{
+  padding: 20px 20px;
+  font-weight: bold;
+  color: white;
+  /* background-color: #7893bc */
+}
+/* .heading-1{
+  padding: 20px 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #1e4c90
+} */
+/*toggle*/
+.PricingApp .price-switch {
+  --border-radius: 10em;
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-radius: var(--border-radius);
+  position: relative;
+  cursor: pointer;
+}
+.switch-slider{
+  background-color: #1e4c90;
+}
+.PricingApp .price-checkbox {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.PricingApp .switch-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 25px;
+  border-radius: var(--border-radius);
+  background-image: linear-gradient(to right, blue);
+}
+
+.PricingApp .switch-slider:is(:hover, :focus-visible) {
+  opacity: 0.7;
+}
+
+.PricingApp .switch-slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 20px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: white;
+  transform: translateX(calc(100% + 2px));
+  transition: 0.3s ease;
+}
+
+.PricingApp .price-checkbox:checked + .switch-slider::before {
+  transform: translateX(0%);
+}
+/*------*/
+
